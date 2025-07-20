@@ -16,7 +16,7 @@ const TextNode = ({ data, id, ...props }: NodeProps) => {
         </div>
         <Image src="WhatsApp.svg" alt="WhatsApp" width={20} height={20} />
       </div>
-      <p className="px-2 py-1">{data?.text || "No text"}</p>
+      <p className="px-2 py-1">{`${data?.text}` || "No text"}</p>
       <Handle type="source" position={Position.Bottom} />
     </div>
   );
